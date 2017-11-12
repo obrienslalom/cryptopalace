@@ -7,7 +7,8 @@ option(test "Build all tests." OFF) # Makes boolean 'test' available.
 set(PROJECT_NAME MyProject)
 project(${PROJECT_NAME})
 
-set(CMAKE_CXX_FLAGS "-g -Wall")
+#set(CMAKE_CXX_FLAGS "-g -Weverything -stdlib=libstdc++")
+set(CMAKE_CXX_FLAGS "-g -Wall -stdlib=libstdc++")
 
 # force static runtime libraries for msvc builds
 if(MSVC)
