@@ -6,22 +6,6 @@
 
 const char* BASE64_TABLE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-char HexToByte(char c) 
-{
-    if(c >= 'a' && c <= 'f')
-    {
-        return 10 + (c - 'a');
-    }
-    else if(c >= 'A' && c <= 'F')
-    {
-        return 10 + (c - 'A');
-    }
-    else
-    {
-        return c - '0';
-    }
-    return 0;
-}
 
 const char* HexToBase64(const char* c) 
 {
